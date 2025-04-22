@@ -1,45 +1,84 @@
-# Electrocute
+# ⚡ Electrocute
 
-**Electrocute** is a Python library designed for electronic formulas and signal processing. It provides easy-to-use functions for calculations like Ohm's Law, power, FFT, DFT, and filters, making it ideal for engineers, students, and hobbyists.
+**Electrocute** is a Python library built for electronics and signal processing enthusiasts. Whether you're an engineer, student, or hobbyist, this package offers intuitive functions for working with electrical formulas and analyzing signals with ease.
 
 ---
 
-## Installation
+## 📦 Installation
 
 ```bash
 pip install electrocute
 ```
 
-## Usage
+---
+
+## 🚀 Quick Start
+
+### Basic Electronic Formulas
 
 ```python
-from electrocute import Electrocute
+from electrocute.formulas.basic import BasicFormulas
 
-# Calculate voltage using Ohm's Law
-voltage = Electrocute.ohms_law(current=2, resistance=5)
-print(f"Voltage: {voltage} V")  # Output: 10 V
+# Calculate voltage using Ohm's Law: V = I * R
+voltage = BasicFormulas.ohms_law(current=2, resistance=5)
+print(f"Voltage: {voltage} V")  # Output: Voltage: 10 V
 
-import numpy as np
-from electrocute import Electrocute
-
-t = np.linspace(0, 1, 1000, endpoint=False)
-signal = np.sin(2 * np.pi * 10 * t)
-freqs, amps = Electrocute.frequency_spectrum(signal, sampling_rate=1000)
+# Calculate power: P = V * I
+power = BasicFormulas.power(voltage=10, current=2)
+print(f"Power: {power} W")  # Output: Power: 20 W
 ```
 
-## Features
+### Frequency Spectrum Analysis
 
-- Electronic formulas (Ohm's Law, power calculations, etc.)
-- Signal processing (FFT, DFT, frequency spectrum, filters)
-- Extensible and well-documented API
+```python
+import numpy as np
+from electrocute.signal_processing.transforms import Transforms
 
-## Contributing
+# Generate a simple sine wave signal
+t = np.linspace(0, 1, 1000, endpoint=False)
+signal = np.sin(2 * np.pi * 10 * t)
 
-Contributions are welcome! Please submit a pull request or open an issue on GitHub.
+# Get the frequency spectrum
+freqs, amps = Transforms.frequency_spectrum(signal, sampling_rate=1000)
+```
 
-### Maintainers:
-This library is under development and is actively maintained by Madhur Thareja.
+### Filtering Signals
 
-## License
+```python
+from electrocute.signal_processing.filters import Filters
 
-MIT License
+# Create a signal with multiple frequency components
+t = np.linspace(0, 1, 1000, endpoint=False)
+signal = np.sin(2 * np.pi * 10 * t) + 0.5 * np.sin(2 * np.pi * 20 * t)
+
+# Apply a low-pass filter with a cutoff at 15 Hz
+filtered_signal = Filters.low_pass_filter(signal, cutoff=15, sampling_rate=1000)
+```
+
+---
+
+## 🔧 Features
+
+- 📐 **Electronic Formulas**: Ohm's Law, power, and more.
+- 🎚️ **Signal Processing**: FFT, DFT, filtering, and spectral analysis.
+- 📚 **Extensible API**: Easy-to-use, modular design for seamless integration.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/your-repo/electrocute).
+
+---
+
+## 👨‍💻 Maintainers
+
+This library is actively developed and maintained by **Madhur Thareja**.
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+Feel free to use, modify, and distribute this library.

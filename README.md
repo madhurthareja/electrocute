@@ -68,7 +68,7 @@ filtered_signal = Filters.low_pass_filter(signal, cutoff=15, sampling_rate=1000)
 ## 🤝 Contributing
 
 Contributions are welcome!  
-If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/your-repo/electrocute).
+If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/madhurthareja/electrocute).
 
 ---
 

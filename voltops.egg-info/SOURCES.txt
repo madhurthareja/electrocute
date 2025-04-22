@@ -1,6 +1,6 @@
 README.md
 setup.py
-tests/test.py
+tests/test_voltops.py
 voltops/__init__.py
 voltops.egg-info/PKG-INFO
 voltops.egg-info/SOURCES.txt

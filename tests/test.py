@@ -1,8 +1,8 @@
 import pytest
 import numpy as np
-from electrocute.formulas.basic import BasicFormulas
-from electrocute.signal_processing.filters import Filters
-from electrocute.signal_processing.transforms import Transforms
+from voltops.formulas.basic import BasicFormulas
+from voltops.signal_processing.filters import Filters
+from voltops.signal_processing.transforms import Transforms
 
 def test_ohms_law():
     assert BasicFormulas.ohms_law(current=2, resistance=5) == 10

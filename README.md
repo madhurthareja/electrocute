@@ -1,23 +1,23 @@
-# ⚡ Electrocute
+# Voltops
 
-**Electrocute** is a Python library built for electronics and signal processing enthusiasts. Whether you're an engineer, student, or hobbyist, this package offers intuitive functions for working with electrical formulas and analyzing signals with ease.
+**Voltops** is a Python library built for electronics and signal processing enthusiasts. Whether you're an engineer, student, or hobbyist, this package offers intuitive functions for working with electrical formulas and analyzing signals with ease.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
-pip install electrocute
+pip install voltops
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Basic Electronic Formulas
 
 ```python
-from electrocute.formulas.basic import BasicFormulas
+from voltops.formulas.basic import BasicFormulas
 
 # Calculate voltage using Ohm's Law: V = I * R
 voltage = BasicFormulas.ohms_law(current=2, resistance=5)
@@ -32,7 +32,7 @@ print(f"Power: {power} W")  # Output: Power: 20 W
 
 ```python
 import numpy as np
-from electrocute.signal_processing.transforms import Transforms
+from voltops.signal_processing.transforms import Transforms
 
 # Generate a simple sine wave signal
 t = np.linspace(0, 1, 1000, endpoint=False)
@@ -45,7 +45,7 @@ freqs, amps = Transforms.frequency_spectrum(signal, sampling_rate=1000)
 ### Filtering Signals
 
 ```python
-from electrocute.signal_processing.filters import Filters
+from voltops.signal_processing.filters import Filters
 
 # Create a signal with multiple frequency components
 t = np.linspace(0, 1, 1000, endpoint=False)
@@ -55,28 +55,24 @@ signal = np.sin(2 * np.pi * 10 * t) + 0.5 * np.sin(2 * np.pi * 20 * t)
 filtered_signal = Filters.low_pass_filter(signal, cutoff=15, sampling_rate=1000)
 ```
 
----
 
-## 🔧 Features
+## Features
 
-- 📐 **Electronic Formulas**: Ohm's Law, power, and more.
-- 🎚️ **Signal Processing**: FFT, DFT, filtering, and spectral analysis.
-- 📚 **Extensible API**: Easy-to-use, modular design for seamless integration.
+- **Electronic Formulas**: Ohm's Law, power, and more.
+- **Signal Processing**: FFT, DFT, filtering, and spectral analysis.
+- **Extensible API**: Easy-to-use, modular design for seamless integration.
 
----
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!  
-If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/madhurthareja/electrocute).
+If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/madhurthareja/voltops).
 
----
 
-## 👨‍💻 Maintainers
+## Maintainers
 
 This library is actively developed and maintained by **Madhur Thareja**.
 
----
 
 ## 📄 License
 

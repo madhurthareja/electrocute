@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="electrocute",
-    version="0.1.2",
+    name="voltops",
+    version="0.1.0",
     author="Madhur Thareja",
     author_email="madhurthareja1105@gmail.com",
     description="A Python library for electronic formulas and signal processing",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/madhurthareja/electrocute",
+    url="https://github.com/madhurthareja/voltops",
     packages=find_packages(),
     install_requires=[
         "numpy>=1.21.0",

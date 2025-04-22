@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: electrocute
-Version: 0.1.1
+Version: 0.1.2
 Summary: A Python library for electronic formulas and signal processing
 Home-page: https://github.com/madhurthareja/electrocute
 Author: Madhur Thareja
@@ -92,7 +92,7 @@ filtered_signal = Filters.low_pass_filter(signal, cutoff=15, sampling_rate=1000)
 ## 🤝 Contributing
 
 Contributions are welcome!  
-If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/your-repo/electrocute).
+If you'd like to report a bug, request a feature, or contribute code, feel free to open an issue or submit a pull request on [GitHub](https://github.com/madhurthareja/electrocute).
 
 ---
 
